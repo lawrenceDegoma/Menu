@@ -1,3 +1,5 @@
+"use client"; // Add this at the top
+
 import { useState } from "react";
 
 export default function Home() {
@@ -22,10 +24,15 @@ export default function Home() {
     );
 }
 
+const flexColumn = "column" as const;
+const textAlignCenter = "center" as const;
+const flexRow = "row" as const;
+const flexWrap = "wrap" as const;
+
 const styles = {
     container: {
         display: "flex",
-        flexDirection: "column" as "column",
+        flexDirection: flexColumn,
         alignItems: "center",
         padding: "20px",
         maxWidth: "1200px",
@@ -34,14 +41,14 @@ const styles = {
 
     heading: {
         fontSize: "2rem",
-        textAlign: "center" as "center",
+        textAlign: textAlignCenter,
         marginBottom: "20px",
     },
 
     menuGrid: {
         display: "flex",
-        flexDirection: "column" as "column",
-        gap: "20px", // Removed extra space
+        flexDirection: flexColumn,
+        gap: "20px",
         width: "100%",
     },
 
@@ -49,14 +56,14 @@ const styles = {
         border: "1px solid #ccc",
         padding: "15px",
         borderRadius: "10px",
-        textAlign: "center" as "center",
+        textAlign: textAlignCenter,
     },
 
     '@media(min-width: 768px)': {
         menuGrid: {
-            flexDirection: "row" as "row",
-            flexWrap: "wrap" as "wrap",
-            justifyContent: "center" as "center",
+            flexDirection: flexRow,
+            flexWrap: flexWrap,
+            justifyContent: textAlignCenter,
             gap: "30px",
         },
         card: {
