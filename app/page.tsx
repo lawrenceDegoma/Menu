@@ -10,17 +10,17 @@ export default function Home() {
     ]);
 
     const [foodItems] = useState([
-        { name: "Tacos", description: "Soft tortillas filled with seasoned meats and topped with cilantro, onions, and "},
+        { name: "Tacos", description: "Soft tortillas filled with seasoned meats and topped with cilantro, onions, and fresh salsa"},
         { name: "Beet Tostadas", description: ""},
         { name: "Aguachile", description: ""}
     ]);
     
     return (
         <div style={styles.container}>
-            {/* Drink Menu */}
-            <h1 style={styles.heading}>Drink Menu</h1>
+            {/* Food Menu */}
+            <h1 style={styles.heading}>Food Menu</h1>
             <div style={styles.menuGrid}>
-                {menuItems.map((item, index) => (
+                {foodItems.map((item, index) => (
                     <div key={index} style={styles.card}>
                         <h2 style={styles.itemName}>{item.name}</h2>
                         <p>{item.description}</p>
@@ -28,10 +28,10 @@ export default function Home() {
                 ))}
             </div>
 
-            {/* Food Menu */}
-            <h1 style={styles.heading}>Food Menu</h1>
+            {/* Drink Menu */}
+            <h1 style={styles.heading}>Drink Menu</h1>
             <div style={styles.menuGrid}>
-                {foodItems.map((item, index) => (
+                {menuItems.map((item, index) => (
                     <div key={index} style={styles.card}>
                         <h2 style={styles.itemName}>{item.name}</h2>
                         <p>{item.description}</p>
