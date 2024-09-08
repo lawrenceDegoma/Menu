@@ -10,9 +10,9 @@ export default function Home() {
     ]);
 
     const [foodItems] = useState([
-        { name: "Tacos", description: "Soft tortillas filled with seasoned meats and topped with cilantro, onions, and fresh salsa"},
-        { name: "Beet Tostadas", description: ""},
-        { name: "Aguachile", description: ""}
+        { name: "Tacos", description: "Bistek-inspired tacos with a serrano puree."},
+        { name: "Beet Tostadas", description: "Red Beets, chermoula, hummus, pickled red onions, queso fresco, topped with crunchy salt."},
+        { name: "Aguachile", description: "Shrimp, avocado, agua de serano y manzana, and cucumbers."}
     ]);
     
     return (
