@@ -12,7 +12,7 @@ export default function Home() {
     const [foodItems] = useState([
         { name: "Tacos", description: "Soft tortillas filled with seasoned meats and topped with cilantro, onions, and "},
         { name: "Beet Tostadas", description: ""},
-        { name: "Aguachile;", description: ""}
+        { name: "Aguachile", description: ""}
     ]);
     
     return (
