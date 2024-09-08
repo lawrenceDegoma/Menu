@@ -4,9 +4,9 @@ import { useState } from "react";
 
 export default function Home() {
     const [menuItems] = useState([
-        { name: "Long Island Iced Tea", description: "A bold and refreshing cocktail made with a blend of vodka, rum, tequila, gin, and triple sec. Mixed with sweet and sour and a splash of Coke." },
-        { name: "Tokyo Tea", description: "Adding a twist to the Long Island, the Tokyo Tea uses a melon liqueur called Midori to give the drink its green hue. Topped with Sprite for a crisp drinking experience." },
-        { name: "Blue Raspberry Fizz", description: "If you're looking for a simple and fun time, try this Fizz for a light and sweet carbonated beverage." }
+        { name: "Long Island Iced Tea", description: "A bold and refreshing cocktail made with a blend of vodka, rum, tequila, gin, and triple sec. Mixed with sweet and sour and a splash of Coke" },
+        { name: "Tokyo Tea", description: "Adding a twist to the Long Island, the Tokyo Tea uses a melon liqueur called Midori to give the drink its green hue. Topped with Sprite for a crisp drinking experience" },
+        { name: "Blue Raspberry Fizz", description: "If you're looking for a simple and fun time, try this Fizz for a light and sweet carbonated beverage" }
     ]);
 
     const [foodItems] = useState([
