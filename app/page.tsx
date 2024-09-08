@@ -9,11 +9,29 @@ export default function Home() {
         { name: "Blue Raspberry Fizz", description: "If you're looking for a simple and fun time, try this Fizz for a light and sweet carbonated beverage." }
     ]);
 
+    const [foodItems] = useState([
+        { name: "Tacos", description: ""},
+        { name: "Beet Tostadas", description: ""},
+        { name: "Agua Chil&eacute;", description: ""}
+    ]);
+    
     return (
         <div style={styles.container}>
+            {/* Drink Menu */}
             <h1 style={styles.heading}>Drink Menu</h1>
             <div style={styles.menuGrid}>
                 {menuItems.map((item, index) => (
+                    <div key={index} style={styles.card}>
+                        <h2>{item.name}</h2>
+                        <p>{item.description}</p>
+                    </div>
+                ))}
+            </div>
+
+            {/* Food Menu */}
+            <h1 style={styles.heading}>Food Menu</h1>
+            <div style={styles.menuGrid}>
+                {foodItems.map((item, index) => (
                     <div key={index} style={styles.card}>
                         <h2>{item.name}</h2>
                         <p>{item.description}</p>
