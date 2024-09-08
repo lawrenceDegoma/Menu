@@ -10,9 +10,9 @@ export default function Home() {
     ]);
 
     const [foodItems] = useState([
-        { name: "Tacos", description: ""},
+        { name: "Tacos", description: "Soft tortillas filled with seasoned meats and topped with cilantro, onions, and "},
         { name: "Beet Tostadas", description: ""},
-        { name: "Agua Chil&eacute;", description: ""}
+        { name: "Aguachile;", description: ""}
     ]);
     
     return (
@@ -22,7 +22,7 @@ export default function Home() {
             <div style={styles.menuGrid}>
                 {menuItems.map((item, index) => (
                     <div key={index} style={styles.card}>
-                        <h2>{item.name}</h2>
+                        <h2 style={styles.itemName}>{item.name}</h2>
                         <p>{item.description}</p>
                     </div>
                 ))}
@@ -33,7 +33,7 @@ export default function Home() {
             <div style={styles.menuGrid}>
                 {foodItems.map((item, index) => (
                     <div key={index} style={styles.card}>
-                        <h2>{item.name}</h2>
+                        <h2 style={syles.itemName}>{item.name}</h2>
                         <p>{item.description}</p>
                     </div>
                 ))}
@@ -75,6 +75,10 @@ const styles = {
         padding: "15px",
         borderRadius: "10px",
         textAlign: textAlignCenter,
+    },
+
+    itemName: {
+        fontWeight: "bold",
     },
 
     '@media(min-width: 768px)': {
