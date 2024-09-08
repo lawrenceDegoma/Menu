@@ -33,7 +33,7 @@ export default function Home() {
             <div style={styles.menuGrid}>
                 {foodItems.map((item, index) => (
                     <div key={index} style={styles.card}>
-                        <h2 style={syles.itemName}>{item.name}</h2>
+                        <h2 style={styles.itemName}>{item.name}</h2>
                         <p>{item.description}</p>
                     </div>
                 ))}
